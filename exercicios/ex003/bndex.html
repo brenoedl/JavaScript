@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos DOM</title>
+    <style>
+        body{font: 1.6em sans-serif;}
+        div#r2b2{
+            background-color: blueviolet;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="r2b2">interaja...</div>
+    <script>
+        var d = document.querySelector('div#r2b2')
+        d.addEventListener('click' , clicar)
+        d.addEventListener('mouseenter' , entrar)
+        d.addEventListener('mouseout' , sair)
+        function entrar(){
+            d.innerHTML = 'entrou'
+        }
+        function clicar(){
+            d.innerHTML = 'clicou'
+            d.style.background = 'red'
+        }
+        function sair(){
+            d.innerHTML = 'saiu'
+            d.style.background = 'blueviolet'
+        }
+    </script>
+</body>
+</html>
