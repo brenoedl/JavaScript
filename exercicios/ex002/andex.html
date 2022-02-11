@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{background-color: #b47be9; font: 2em sans-serif;}
-    </style>
+    <title>meu primeiro programa...</title>
 </head>
 <body>
-    
+    <h1>Olá, Mundo!</h1>
+
+    <p>já me livrei da maldição</p>
+
     <script>
-        var nome = window.prompt('qual é o seu nome?')
-        document.write(`ola ${nome} seu nome tem ${nome.length} letras <br>`)
-        document.write(`seu nome em maiusculas é ${nome.toUpperCase()}<br>`)
-        document.write(`seu nome em minusculas é ${nome.toLowerCase()}`)
+        var nome = window.prompt('qual o seu nome?')
+        window.alert('é um praser em te conhecer,' + nome + '!')
+        var n1 = Number(window.prompt('digite um numero'))
+        var n2 = Number(window.prompt('digite outro numero'))
+        var s = n1+n2
+        window.alert(`${nome} a soma entre ${n1} e ${n2} é igual a ${s}`)
     </script>
 </body>
 </html>
