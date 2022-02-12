@@ -6,14 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>somando numeros</title>
     <style>
-        body{
-            font: normal 2em sans-serif;
-        }
-
-        input{
-            font: normal 2em sans-serif;
-        }
-
         div#res{
             margin-top: 40px;
         }
@@ -27,11 +19,11 @@
     <div id="res">resultado</div>
     <script>
         function somar(){
-            var tn1 = document.getElementById('txn1')
-            var tn2 = document.getElementById('txn2')
-            var res = document.querySelector('div#res')
-            var n1 = Number(tn1.nodeValue)
-            var n2 = Number(tn2.nodeValue)
+            var tn1 = window.document.getElementById('txn1')
+            var tn2 = window.document.getElementById('txn2')
+            var res = window.document.querySelector('div#res')
+            var n1 = Number('tn1')
+            var n2 = Number('tn2')
             var s = n1 + n2
             res.innerHTML = `o resultado entre ${n1} e ${n2} é igual á ${s}`
         }
