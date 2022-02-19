@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro ou Nativo</title>
+</head>
+<body>
+    <h1>Estrangeiro ou Nativo</h1>
+    <p>digite um pais</p>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res"></div>
+    
+    <script>
+        var pais = document.querySelector('input#pais')
+        var res = document.querySelector('div#res')
+        function verificar(){
+            res.innerHTML = `vivendo em ${pais}`
+            if(pais != 'Brasil'){
+                res.innerHTML += 'Estrangeiro'
+            }else{
+                res.innerHTML += 'Nativo'
+            }
+         }
+    </script>
+</body>
+</html>
