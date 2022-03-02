@@ -6,7 +6,6 @@ function caregar(){
     msg.innerHTML = `Agora são exatamente ${hora} horas`
     if(hora >= 0 && hora < 12){
         //bom dia
-        img.src = 'manha.png'
         document.body.style.background = '#e2cd9f'
     }else if(hora >= 12 && hora <= 18){
         //boa tarde
